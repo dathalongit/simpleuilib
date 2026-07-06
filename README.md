@@ -2,7 +2,7 @@
 
 Monorepo demo kiến trúc **Headless UI + Slot Pattern** cho React.
 
-Toàn bộ mã nguồn (thư viện + demo) viết bằng **JavaScript thuần (React + JSX)**, không dùng TypeScript
+Toàn bộ mã nguồn (thư viện + demo) viết bằng **JavaScript thuần (React + JSX)**, không dùng TypeScript.
 
 ## Packages
 
