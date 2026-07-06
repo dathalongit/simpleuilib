@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #eff6ff 0%, #f0fdf4 50%, #fefce8 100%);
+  font-family: system-ui, sans-serif;
+  color: #1e293b;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.page-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.page-header code {
+  font-size: 0.85em;
+  background: #e2e8f0;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Layout wrapper — chỉ sắp xếp, không thay UI component thư viện */
+.compound-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.compound-block {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.block-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.compound-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.compound-row > *:first-child {
+  flex: 1;
+  min-width: 200px;
+}
+
+.compound-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compound-layout hr {
+  border: none;
+  border-top: 1px dashed #e2e8f0;
+  margin: 0.25rem 0;
+}

@@ -1,0 +1,149 @@
+/* Scoped — chỉ áp dụng trong demo compound-slot, tránh đè :root/body toàn app */
+.demo-compound-slot {
+  --cs-bg: #0f172a;
+  --cs-surface: #1e293b;
+  --cs-surface-2: #334155;
+  --cs-accent: #14b8a6;
+  --cs-accent-hover: #0d9488;
+  --cs-text: #f8fafc;
+  --cs-muted: #94a3b8;
+  --cs-success: #34d399;
+  --cs-error: #f87171;
+  --cs-warning: #fbbf24;
+  --cs-info: #60a5fa;
+  --cs-radius: 12px;
+  color: var(--cs-text);
+}
+
+.demo-compound-slot .quiz-shell {
+  border: 1px solid var(--cs-surface-2);
+  border-radius: calc(var(--cs-radius) + 4px);
+  overflow: hidden;
+  background: var(--cs-surface);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.demo-compound-slot .quiz-top {
+  padding: 1rem 1.25rem;
+  background: linear-gradient(90deg, rgba(20, 184, 166, 0.2), transparent);
+  border-bottom: 1px solid var(--cs-surface-2);
+}
+
+.demo-compound-slot .section-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cs-muted);
+}
+
+.demo-compound-slot .question-text {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.demo-compound-slot .quiz-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--cs-surface-2);
+  border-radius: var(--cs-radius);
+  background: var(--cs-bg);
+  color: var(--cs-text);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.demo-compound-slot .quiz-input:focus {
+  border-color: var(--cs-accent);
+}
+
+.demo-compound-slot .quiz-input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.demo-compound-slot .quiz-btn {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: var(--cs-radius);
+  background: var(--cs-accent);
+  color: #042f2e;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.demo-compound-slot .quiz-btn:hover:not(:disabled) {
+  background: var(--cs-accent-hover);
+}
+
+.demo-compound-slot .quiz-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.demo-compound-slot .quiz-btn--ghost {
+  background: transparent;
+  border: 1px solid var(--cs-surface-2);
+  color: var(--cs-text);
+}
+
+.demo-compound-slot .quiz-btn--ghost:hover:not(:disabled) {
+  background: var(--cs-surface-2);
+}
+
+.demo-compound-slot .feedback-msg {
+  margin: 0;
+  font-weight: 700;
+}
+
+.demo-compound-slot .feedback-msg--ok {
+  color: var(--cs-success);
+}
+
+.demo-compound-slot .feedback-msg--err {
+  color: var(--cs-error);
+}
+
+.demo-compound-slot .hint-box,
+.demo-compound-slot .solution-box {
+  margin: 0.75rem 0 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--cs-radius);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.demo-compound-slot .hint-box {
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  color: var(--cs-warning);
+}
+
+.demo-compound-slot .solution-box {
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  color: var(--cs-info);
+}
+
+.demo-compound-slot .footer-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.demo-compound-slot .badge-id {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--cs-muted);
+}
+
+.demo-compound-slot .badge-id strong {
+  color: var(--cs-accent);
+}

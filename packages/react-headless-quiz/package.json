@@ -1,0 +1,40 @@
+{
+  "name": "react-headless-quiz",
+  "version": "0.1.0",
+  "description": "Headless React quiz library with Slot Pattern and Compound Components",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.5"
+  },
+  "keywords": [
+    "react",
+    "headless",
+    "quiz",
+    "slot-pattern",
+    "compound-components"
+  ],
+  "license": "MIT"
+}
